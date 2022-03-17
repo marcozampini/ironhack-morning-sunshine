@@ -208,3 +208,9 @@ section {
   height: 100vh;
   border-bottom: 1px solid red;
 }
+.thank-you {
+  background-image: url('./images/marco-2018.png');
+  background-position: bottom 0 right 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
