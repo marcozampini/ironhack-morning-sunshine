@@ -187,6 +187,9 @@ h5,
 h6 {
   font-family: 'DIN 2014', Arial, sans-serif;
 }
+h2 {
+  display: none;
+}
 body {
   font-family: Heebo, Arial, sans-serif;
   font-size: 1.5rem;
@@ -200,7 +203,7 @@ h2 {
 section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
   border-bottom: 1px solid red;

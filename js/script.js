@@ -11,21 +11,30 @@ window.addEventListener('load', () => {
     }
 
     const section = sections[sectionIndex]
-    console.log(section, sectionIndex)
+    if (sectionIndex > 0) {
+      const previousSection = sections[sectionIndex - 1]
+      previousSection.classList.remove('active')
+    }
     section.scrollIntoView()
+    section.classList.add('active')
+    console.log(section, sectionIndex)
   }
 
   document.addEventListener('keydown', (event) => {
     event.preventDefault()
 
     switch (event.key) {
+      case 'Enter':
+        console.log('enter pressed')
+        document.querySelector('.active h2').style.display = 'block'
+        break
       case 'ArrowUp':
       case 'ArrowLeft':
+        document.querySelector('.active h2').style.display = 'none'
         scroll(-1)
         break
       case 'ArrowDown':
       case 'ArrowRight':
-      case 'Enter':
         scroll(1)
         break
     }
