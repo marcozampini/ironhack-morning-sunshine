@@ -211,6 +211,9 @@ section {
 ul li {
   margin-bottom: 1rem;
 }
+p {
+  max-width: 40rem;
+}
 .thank-you {
   background-image: url('./images/marco-2018.png');
   background-position: bottom 0 right 2rem;
